@@ -1,0 +1,4 @@
+gmake[2]: *** Deleting file 'ld08_driver'
+gmake[2]: *** [CMakeFiles/ld08_driver.dir/build.make:240: ld08_driver] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ld08_driver.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

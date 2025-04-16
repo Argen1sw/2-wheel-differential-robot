@@ -1,0 +1,1 @@
+Invoking command in '/home/ubuntu/ros2-slam-basic/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2-slam-basic/build/slam_toolbox -- -j4 -l4

@@ -1,0 +1,286 @@
+[0.065s] Invoking command in '/home/ubuntu/ros2-slam-basic/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2-slam-basic/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2-slam-basic/install/slam_toolbox
+[1.268s] -- The C compiler identification is GNU 11.4.0
+[2.051s] -- The CXX compiler identification is GNU 11.4.0
+[2.100s] -- Detecting C compiler ABI info
+[2.506s] -- Detecting C compiler ABI info - done
+[2.537s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.539s] -- Detecting C compile features
+[2.542s] -- Detecting C compile features - done
+[2.559s] -- Detecting CXX compiler ABI info
+[2.957s] -- Detecting CXX compiler ABI info - done
+[2.986s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.988s] -- Detecting CXX compile features
+[2.989s] -- Detecting CXX compile features - done
+[3.049s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.891s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.734s] -- Found message_filters: 4.3.6 (/opt/ros/humble/share/message_filters/cmake)
+[5.351s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.430s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.536s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.668s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.843s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.352s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[6.394s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.126s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[7.376s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.763s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.889s] -- Looking for pthread.h
+[8.289s] -- Looking for pthread.h - found
+[8.291s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.685s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.690s] -- Found Threads: TRUE  
+[9.123s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[9.359s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[9.497s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[9.644s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[10.365s] -- Found visualization_msgs: 4.8.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[10.503s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[10.739s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[10.970s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[10.978s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[10.979s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[11.017s] -- Found tf2_sensor_msgs: 0.25.12 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+[11.069s] -- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)
+[11.161s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[11.270s] -- Found lifecycle_msgs: 1.2.1 (/opt/ros/humble/share/lifecycle_msgs/cmake)
+[11.362s] -- Found bondcpp: 4.1.2 (/opt/ros/humble/share/bondcpp/cmake)
+[11.672s] -- Found rviz_common: 11.2.16 (/opt/ros/humble/share/rviz_common/cmake)
+[11.914s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[12.034s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[12.044s] -- Found OGRE
+[12.045s] --   static     : OFF
+[12.045s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[12.046s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[12.046s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[12.047s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[12.047s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[12.048s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[12.048s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[12.049s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[12.049s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[12.050s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[12.050s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[12.052s] -- Could not find freeimage library
+[12.148s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.2.11") 
+[12.185s] -- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so   
+[12.370s] -- Found X11: /usr/include   
+[12.372s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so
+[12.772s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found
+[12.773s] -- Looking for gethostbyname
+[13.122s] -- Looking for gethostbyname - found
+[13.123s] -- Looking for connect
+[13.467s] -- Looking for connect - found
+[13.468s] -- Looking for remove
+[13.810s] -- Looking for remove - found
+[13.810s] -- Looking for shmat
+[14.158s] -- Looking for shmat - found
+[14.159s] -- Looking for IceConnectionNumber in ICE
+[14.511s] -- Looking for IceConnectionNumber in ICE - found
+[15.051s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[15.359s] -- Found rviz_default_plugins: 11.2.16 (/opt/ros/humble/share/rviz_default_plugins/cmake)
+[16.073s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system serialization filesystem thread 
+[16.159s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[16.195s] -- Found CHOLMOD: /usr/include/suitesparse  
+[16.205s] -- Found CSparse: /usr/include/suitesparse  
+[16.341s] -- Looking for sgemm_
+[16.682s] -- Looking for sgemm_ - not found
+[16.914s] -- Looking for sgemm_
+[17.272s] -- Looking for sgemm_ - found
+[17.274s] -- Found BLAS: /usr/lib/aarch64-linux-gnu/libblas.so  
+[17.285s] -- Looking for cheev_
+[17.641s] -- Looking for cheev_ - not found
+[17.689s] -- Looking for cheev_
+[17.966s] -- Looking for cheev_ - not found
+[17.968s] -- Looking for cheev_
+[18.391s] -- Looking for cheev_ - found
+[18.392s] -- Found LAPACK: /usr/lib/aarch64-linux-gnu/liblapack.so;/usr/lib/aarch64-linux-gnu/libblas.so  
+[18.450s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/include/eigen3
+[18.531s] -- Found required Ceres dependency: glog
+[18.534s] -- Found required Ceres dependency: gflags
+[18.538s] -- Found Ceres version: 2.0.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, Multithreading]
+[20.623s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[23.379s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[24.418s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[24.540s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[24.575s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[24.717s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[24.718s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[24.718s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[24.718s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[24.830s] -- Found PythonExtra: .so  
+[25.536s] -- Configuring done
+[27.454s] -- Generating done
+[27.744s] -- Build files have been written to: /home/ubuntu/ros2-slam-basic/build/slam_toolbox
+[27.835s] Invoked command in '/home/ubuntu/ros2-slam-basic/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2-slam-basic/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2-slam-basic/install/slam_toolbox
+[27.849s] Invoking command in '/home/ubuntu/ros2-slam-basic/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2-slam-basic/build/slam_toolbox -- -j4 -l4
+[28.091s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[28.143s] [  2%] [32mBuilding CXX object lib/karto_sdk/CMakeFiles/kartoSlamToolbox.dir/src/Karto.cpp.o[0m
+[28.146s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[28.180s] [  2%] Built target ament_cmake_python_copy_slam_toolbox
+[29.683s] running egg_info
+[29.686s] creating slam_toolbox.egg-info
+[29.686s] writing slam_toolbox.egg-info/PKG-INFO
+[29.688s] writing dependency_links to slam_toolbox.egg-info/dependency_links.txt
+[29.689s] writing top-level names to slam_toolbox.egg-info/top_level.txt
+[29.692s] writing manifest file 'slam_toolbox.egg-info/SOURCES.txt'
+[29.705s] reading manifest file 'slam_toolbox.egg-info/SOURCES.txt'
+[29.708s] writing manifest file 'slam_toolbox.egg-info/SOURCES.txt'
+[29.867s] [  2%] Built target ament_cmake_python_build_slam_toolbox_egg
+[29.909s] [  3%] [32mBuilding CXX object lib/karto_sdk/CMakeFiles/kartoSlamToolbox.dir/src/Mapper.cpp.o[0m
+[36.007s] [  3%] Built target slam_toolbox__cpp
+[36.068s] [  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[36.148s] [  4%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/pause__functions.c.o[0m
+[37.169s] [  5%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/reset__functions.c.o[0m
+[38.027s] [  6%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/clear_queue__functions.c.o[0m
+[38.887s] [  6%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/toggle_interactive__functions.c.o[0m
+[39.747s] [  7%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/clear__functions.c.o[0m
+[40.462s] [  7%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/pause__type_support.cpp.o[0m
+[40.684s] [  8%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/save_map__functions.c.o[0m
+[41.664s] [  9%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/loop_closure__functions.c.o[0m
+[42.634s] [  9%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/merge_maps__functions.c.o[0m
+[42.670s] [ 10%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/reset__type_support.cpp.o[0m
+[43.506s] [ 11%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/add_submap__functions.c.o[0m
+[44.463s] [ 12%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/deserialize_pose_graph__functions.c.o[0m
+[44.745s] [ 13%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/clear_queue__type_support.cpp.o[0m
+[45.438s] [ 13%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_generator_c.dir/rosidl_generator_c/slam_toolbox/srv/detail/serialize_pose_graph__functions.c.o[0m
+[46.415s] [ 14%] [32m[1mLinking C shared library libslam_toolbox__rosidl_generator_c.so[0m
+[46.719s] [ 14%] Built target slam_toolbox__rosidl_generator_c
+[46.788s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[46.888s] [ 16%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/toggle_interactive__type_support.cpp.o[0m
+[48.981s] [ 16%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/clear__type_support.cpp.o[0m
+[51.002s] [ 17%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/save_map__type_support.cpp.o[0m
+[53.150s] [ 18%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/loop_closure__type_support.cpp.o[0m
+[53.884s] [ 18%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/pause__type_support.cpp.o[0m
+[55.250s] [ 18%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/merge_maps__type_support.cpp.o[0m
+[57.335s] [ 19%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/reset__type_support.cpp.o[0m
+[57.647s] [ 20%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/add_submap__type_support.cpp.o[0m
+[60.341s] [ 21%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/deserialize_pose_graph__type_support.cpp.o[0m
+[60.477s] [ 22%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/clear_queue__type_support.cpp.o[0m
+[62.574s] [ 22%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/slam_toolbox/srv/serialize_pose_graph__type_support.cpp.o[0m
+[63.667s] [ 22%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/toggle_interactive__type_support.cpp.o[0m
+[64.738s] [ 23%] [32m[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_cpp.so[0m
+[65.031s] [ 23%] Built target slam_toolbox__rosidl_typesupport_cpp
+[65.099s] [ 24%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[66.990s] [ 25%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/clear__type_support.cpp.o[0m
+[70.524s] [ 26%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/save_map__type_support.cpp.o[0m
+[71.660s] [ 26%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/pause__type_support.c.o[0m
+[72.050s] [ 27%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/reset__type_support.c.o[0m
+[72.473s] [ 28%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/clear_queue__type_support.c.o[0m
+[72.828s] [ 28%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/toggle_interactive__type_support.c.o[0m
+[73.224s] [ 29%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/clear__type_support.c.o[0m
+[73.661s] [ 30%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/save_map__type_support.c.o[0m
+[74.166s] [ 30%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/loop_closure__type_support.cpp.o[0m
+[74.263s] [ 30%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/loop_closure__type_support.c.o[0m
+[74.594s] [ 31%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/merge_maps__type_support.c.o[0m
+[74.929s] [ 32%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/add_submap__type_support.c.o[0m
+[76.436s] [ 32%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.c.o[0m
+[77.583s] [ 33%] [32mBuilding C object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/slam_toolbox/srv/detail/serialize_pose_graph__type_support.c.o[0m
+[77.962s] [ 34%] [32m[1mLinking C shared library libslam_toolbox__rosidl_typesupport_introspection_c.so[0m
+[78.015s] [ 35%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/merge_maps__type_support.cpp.o[0m
+[78.354s] [ 35%] Built target slam_toolbox__rosidl_typesupport_introspection_c
+[78.458s] [ 36%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[83.543s] [ 37%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/add_submap__type_support.cpp.o[0m
+[85.879s] [ 37%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/pause__type_support.cpp.o[0m
+[86.145s] [ 38%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/reset__type_support.cpp.o[0m
+[86.410s] [ 39%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/clear_queue__type_support.cpp.o[0m
+[86.658s] [ 39%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/toggle_interactive__type_support.cpp.o[0m
+[86.908s] [ 40%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/clear__type_support.cpp.o[0m
+[87.161s] [ 41%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/save_map__type_support.cpp.o[0m
+[87.188s] [ 41%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/deserialize_pose_graph__type_support.cpp.o[0m
+[87.404s] [ 41%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/loop_closure__type_support.cpp.o[0m
+[87.636s] [ 42%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/merge_maps__type_support.cpp.o[0m
+[87.873s] [ 43%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/add_submap__type_support.cpp.o[0m
+[88.132s] [ 43%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/deserialize_pose_graph__type_support.cpp.o[0m
+[88.390s] [ 44%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_c.dir/rosidl_typesupport_c/slam_toolbox/srv/serialize_pose_graph__type_support.cpp.o[0m
+[88.649s] [ 45%] [32m[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_c.so[0m
+[88.955s] [ 45%] Built target slam_toolbox__rosidl_typesupport_c
+[89.062s] [ 46%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[91.194s] [ 47%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/slam_toolbox/srv/detail/dds_fastrtps/serialize_pose_graph__type_support.cpp.o[0m
+[96.395s] [ 48%] [32m[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_fastrtps_cpp.so[0m
+[96.956s] [ 48%] Built target slam_toolbox__rosidl_typesupport_fastrtps_cpp
+[97.111s] [ 48%] [34m[1mGenerating rviz_plugin/moc_slam_toolbox_rviz_plugin.cpp[0m
+[97.207s] [ 48%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/pause__type_support.cpp.o[0m
+[97.304s] [ 49%] [32mBuilding CXX object CMakeFiles/SlamToolboxPlugin.dir/rviz_plugin/slam_toolbox_rviz_plugin.cpp.o[0m
+[101.770s] [ 50%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/reset__type_support.cpp.o[0m
+[107.247s] [ 51%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/clear_queue__type_support.cpp.o[0m
+[111.607s] [ 51%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/toggle_interactive__type_support.cpp.o[0m
+[113.591s] [ 52%] [32mBuilding CXX object CMakeFiles/SlamToolboxPlugin.dir/rviz_plugin/moc_slam_toolbox_rviz_plugin.cpp.o[0m
+[114.543s] [ 53%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/clear__type_support.cpp.o[0m
+[117.321s] [ 54%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/save_map__type_support.cpp.o[0m
+[120.272s] [ 54%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/loop_closure__type_support.cpp.o[0m
+[123.225s] [ 55%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/merge_maps__type_support.cpp.o[0m
+[133.303s] [ 56%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/add_submap__type_support.cpp.o[0m
+[169.268s] [ 56%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.cpp.o[0m
+[185.386s] [ 57%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/slam_toolbox/srv/detail/serialize_pose_graph__type_support.cpp.o[0m
+[188.420s] [ 58%] [32m[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_introspection_cpp.so[0m
+[189.031s] [ 58%] Built target slam_toolbox__rosidl_typesupport_introspection_cpp
+[293.934s] [ 58%] [32m[1mLinking CXX shared library libkartoSlamToolbox.so[0m
+[296.667s] [ 58%] Built target kartoSlamToolbox
+[296.837s] [ 59%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[296.868s] [ 60%] [32mBuilding CXX object CMakeFiles/ceres_solver_plugin.dir/solvers/ceres_solver.cpp.o[0m
+[303.081s] [ 60%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/pause__type_support_c.cpp.o[0m
+[304.724s] [ 60%] [32m[1mLinking CXX shared library libSlamToolboxPlugin.so[0m
+[305.513s] [ 61%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/reset__type_support_c.cpp.o[0m
+[308.703s] [ 62%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/clear_queue__type_support_c.cpp.o[0m
+[311.922s] [ 62%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/toggle_interactive__type_support_c.cpp.o[0m
+[313.069s] [ 62%] Built target SlamToolboxPlugin
+[313.115s] [ 63%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/clear__type_support_c.cpp.o[0m
+[313.196s] [ 64%] [32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/slam_toolbox_common.cpp.o[0m
+[314.374s] [ 65%] [32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/map_saver.cpp.o[0m
+[314.619s] In file included from [01m[K/home/ubuntu/ros2-slam-basic/src/slam_toolbox/solvers/ceres_solver.hpp:17[m[K,
+[314.626s]                  from [01m[K/home/ubuntu/ros2-slam-basic/src/slam_toolbox/solvers/ceres_solver.cpp:9[m[K:
+[314.627s] [01m[K/home/ubuntu/ros2-slam-basic/src/slam_toolbox/solvers/ceres_utils.h:10:10:[m[K [01;31m[Kfatal error: [m[Kceres/autodiff_manifold.h: No such file or directory
+[314.628s]    10 | #include [01;31m[K<ceres/autodiff_manifold.h>[m[K
+[314.629s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[314.629s] compilation terminated.
+[314.643s] gmake[2]: *** [CMakeFiles/ceres_solver_plugin.dir/build.make:76: CMakeFiles/ceres_solver_plugin.dir/solvers/ceres_solver.cpp.o] Error 1
+[314.648s] gmake[1]: *** [CMakeFiles/Makefile2:665: CMakeFiles/ceres_solver_plugin.dir/all] Error 2
+[314.649s] gmake[1]: *** Waiting for unfinished jobs....
+[314.689s] [ 65%] [32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/loop_closure_assistant.cpp.o[0m
+[315.434s] [ 66%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/save_map__type_support_c.cpp.o[0m
+[317.533s] [ 66%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/loop_closure__type_support_c.cpp.o[0m
+[319.794s] [ 67%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/merge_maps__type_support_c.cpp.o[0m
+[322.283s] [ 68%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/add_submap__type_support_c.cpp.o[0m
+[325.032s] [ 68%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/deserialize_pose_graph__type_support_c.cpp.o[0m
+[327.995s] [ 69%] [32mBuilding CXX object CMakeFiles/slam_toolbox__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/slam_toolbox/srv/detail/serialize_pose_graph__type_support_c.cpp.o[0m
+[331.145s] [ 70%] [32m[1mLinking CXX shared library libslam_toolbox__rosidl_typesupport_fastrtps_c.so[0m
+[331.651s] [ 70%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c
+[331.706s] [ 71%] [32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/laser_utils.cpp.o[0m
+[576.225s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[576.258s]                  from [01m[K/home/ubuntu/ros2-slam-basic/src/slam_toolbox/src/slam_toolbox_common.cpp:19[m[K:
+[576.263s] /usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘[01m[Ktypename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = message_filters::Subscriber<sensor_msgs::msg::LaserScan_<std::allocator<void> >, rclcpp_lifecycle::LifecycleNode>; _Args = {rclcpp_lifecycle::LifecycleNode*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, rclcpp::SensorDataQoS}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<message_filters::Subscriber<sensor_msgs::msg::LaserScan_<std::allocator<void> >, rclcpp_lifecycle::LifecycleNode> >][m[K’:
+[576.267s] [01m[K/home/ubuntu/ros2-slam-basic/src/slam_toolbox/src/slam_toolbox_common.cpp:459:40:[m[K   required from here
+[576.270s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:962:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmessage_filters::Subscriber<sensor_msgs::msg::LaserScan_<std::allocator<void> >, rclcpp_lifecycle::LifecycleNode>::Subscriber(rclcpp_lifecycle::LifecycleNode*, std::__cxx11::basic_string<char>&, rclcpp::SensorDataQoS)[m[K’
+[576.270s]   962 |     { return unique_ptr<_Tp>([01;31m[Knew _Tp(std::forward<_Args>(__args)...)[m[K); }
+[576.271s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[576.272s] In file included from [01m[K/home/ubuntu/ros2-slam-basic/src/slam_toolbox/include/slam_toolbox/slam_toolbox_common.hpp:38[m[K,
+[576.272s]                  from [01m[K/home/ubuntu/ros2-slam-basic/src/slam_toolbox/src/slam_toolbox_common.cpp:23[m[K:
+[576.273s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:203:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmessage_filters::Subscriber<M, NodeType>::Subscriber() [with M = sensor_msgs::msg::LaserScan_<std::allocator<void> >; NodeType = rclcpp_lifecycle::LifecycleNode][m[K’
+[576.273s]   203 |   [01;36m[KSubscriber[m[K() = default;
+[576.273s]       |   [01;36m[K^~~~~~~~~~[m[K
+[576.275s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:203:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 3 provided
+[576.276s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:191:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmessage_filters::Subscriber<M, NodeType>::Subscriber(NodeType*, const string&, rmw_qos_profile_t, rclcpp::SubscriptionOptions) [with M = sensor_msgs::msg::LaserScan_<std::allocator<void> >; NodeType = rclcpp_lifecycle::LifecycleNode; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s; rclcpp::SubscriptionOptions = rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >][m[K’
+[576.276s]   191 |   [01;36m[KSubscriber[m[K(
+[576.277s]       |   [01;36m[K^~~~~~~~~~[m[K
+[576.277s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:191:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[576.279s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:182:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmessage_filters::Subscriber<M, NodeType>::Subscriber(message_filters::Subscriber<M, NodeType>::NodePtr, const string&, rmw_qos_profile_t, rclcpp::SubscriptionOptions) [with M = sensor_msgs::msg::LaserScan_<std::allocator<void> >; NodeType = rclcpp_lifecycle::LifecycleNode; message_filters::Subscriber<M, NodeType>::NodePtr = std::shared_ptr<rclcpp_lifecycle::LifecycleNode>; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s; rclcpp::SubscriptionOptions = rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >][m[K’
+[576.280s]   182 |   [01;36m[KSubscriber[m[K(
+[576.280s]       |   [01;36m[K^~~~~~~~~~[m[K
+[576.281s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:182:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 3 provided
+[576.281s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:167:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmessage_filters::Subscriber<M, NodeType>::Subscriber(NodeType*, const string&, rmw_qos_profile_t) [with M = sensor_msgs::msg::LaserScan_<std::allocator<void> >; NodeType = rclcpp_lifecycle::LifecycleNode; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s][m[K’
+[576.282s]   167 |   [01;36m[KSubscriber[m[K(NodeType * node, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default)
+[576.282s]       |   [01;36m[K^~~~~~~~~~[m[K
+[576.285s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:167:81:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Krclcpp::SensorDataQoS[m[K’ to ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’}
+[576.286s]   167 |   Subscriber(NodeType * node, const std::string& topic, [01;36m[Kconst rmw_qos_profile_t qos = rmw_qos_profile_default[m[K)
+[576.286s]       |                                                         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[576.287s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:162:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kmessage_filters::Subscriber<M, NodeType>::Subscriber(message_filters::Subscriber<M, NodeType>::NodePtr, const string&, rmw_qos_profile_t) [with M = sensor_msgs::msg::LaserScan_<std::allocator<void> >; NodeType = rclcpp_lifecycle::LifecycleNode; message_filters::Subscriber<M, NodeType>::NodePtr = std::shared_ptr<rclcpp_lifecycle::LifecycleNode>; std::string = std::__cxx11::basic_string<char>; rmw_qos_profile_t = rmw_qos_profile_s][m[K’
+[576.287s]   162 |   [01;36m[KSubscriber[m[K(NodePtr node, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default)
+[576.288s]       |   [01;36m[K^~~~~~~~~~[m[K
+[576.288s] [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:162:22:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Krclcpp_lifecycle::LifecycleNode*[m[K’ to ‘[01m[Kmessage_filters::Subscriber<sensor_msgs::msg::LaserScan_<std::allocator<void> >, rclcpp_lifecycle::LifecycleNode>::NodePtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode>[m[K’}
+[576.289s]   162 |   Subscriber([01;36m[KNodePtr node[m[K, const std::string& topic, const rmw_qos_profile_t qos = rmw_qos_profile_default)
+[576.289s]       |              [01;36m[K~~~~~~~~^~~~[m[K
+[669.837s] [ 72%] [32mBuilding CXX object CMakeFiles/toolbox_common.dir/src/slam_mapper.cpp.o[0m
+[809.083s] gmake[2]: *** [CMakeFiles/toolbox_common.dir/build.make:76: CMakeFiles/toolbox_common.dir/src/slam_toolbox_common.cpp.o] Error 1
+[809.113s] gmake[1]: *** [CMakeFiles/Makefile2:693: CMakeFiles/toolbox_common.dir/all] Error 2
+[809.113s] gmake: *** [Makefile:146: all] Error 2
+[809.938s] Invoked command in '/home/ubuntu/ros2-slam-basic/build/slam_toolbox' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2-slam-basic/build/slam_toolbox -- -j4 -l4

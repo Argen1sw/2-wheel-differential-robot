@@ -1,0 +1,43 @@
+[3.547s] Invoking command in '/home/ubuntu/ros2-slam-basic/src/serial_motor_demo/serial_motor_demo': PYTHONPATH=/home/ubuntu/ros2-slam-basic/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2-slam-basic/install/serial_motor_demo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/serial_motor_demo build --build-base /home/ubuntu/ros2-slam-basic/build/serial_motor_demo/build install --record /home/ubuntu/ros2-slam-basic/build/serial_motor_demo/install.log --install-scripts $base/lib/serial_motor_demo --single-version-externally-managed install_data
+[4.629s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[4.630s]   warnings.warn(
+[4.667s] running egg_info
+[4.670s] creating ../../../build/serial_motor_demo/serial_motor_demo.egg-info
+[4.670s] writing ../../../build/serial_motor_demo/serial_motor_demo.egg-info/PKG-INFO
+[4.672s] writing dependency_links to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/dependency_links.txt
+[4.672s] writing entry points to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/entry_points.txt
+[4.673s] writing requirements to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/requires.txt
+[4.673s] writing top-level names to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/top_level.txt
+[4.674s] writing manifest file '../../../build/serial_motor_demo/serial_motor_demo.egg-info/SOURCES.txt'
+[4.684s] reading manifest file '../../../build/serial_motor_demo/serial_motor_demo.egg-info/SOURCES.txt'
+[4.689s] writing manifest file '../../../build/serial_motor_demo/serial_motor_demo.egg-info/SOURCES.txt'
+[4.689s] running build
+[4.690s] running build_py
+[4.690s] creating /home/ubuntu/ros2-slam-basic/build/serial_motor_demo/build
+[4.691s] creating /home/ubuntu/ros2-slam-basic/build/serial_motor_demo/build/lib
+[4.691s] creating /home/ubuntu/ros2-slam-basic/build/serial_motor_demo/build/lib/serial_motor_demo
+[4.692s] copying serial_motor_demo/__init__.py -> /home/ubuntu/ros2-slam-basic/build/serial_motor_demo/build/lib/serial_motor_demo
+[4.692s] copying serial_motor_demo/gui.py -> /home/ubuntu/ros2-slam-basic/build/serial_motor_demo/build/lib/serial_motor_demo
+[4.694s] copying serial_motor_demo/driver.py -> /home/ubuntu/ros2-slam-basic/build/serial_motor_demo/build/lib/serial_motor_demo
+[4.696s] running install
+[4.697s] running install_lib
+[4.701s] creating /home/ubuntu/ros2-slam-basic/install/serial_motor_demo/lib/python3.10/site-packages/serial_motor_demo
+[4.701s] copying /home/ubuntu/ros2-slam-basic/build/serial_motor_demo/build/lib/serial_motor_demo/__init__.py -> /home/ubuntu/ros2-slam-basic/install/serial_motor_demo/lib/python3.10/site-packages/serial_motor_demo
+[4.702s] copying /home/ubuntu/ros2-slam-basic/build/serial_motor_demo/build/lib/serial_motor_demo/gui.py -> /home/ubuntu/ros2-slam-basic/install/serial_motor_demo/lib/python3.10/site-packages/serial_motor_demo
+[4.703s] copying /home/ubuntu/ros2-slam-basic/build/serial_motor_demo/build/lib/serial_motor_demo/driver.py -> /home/ubuntu/ros2-slam-basic/install/serial_motor_demo/lib/python3.10/site-packages/serial_motor_demo
+[4.706s] byte-compiling /home/ubuntu/ros2-slam-basic/install/serial_motor_demo/lib/python3.10/site-packages/serial_motor_demo/__init__.py to __init__.cpython-310.pyc
+[4.708s] byte-compiling /home/ubuntu/ros2-slam-basic/install/serial_motor_demo/lib/python3.10/site-packages/serial_motor_demo/gui.py to gui.cpython-310.pyc
+[4.715s] byte-compiling /home/ubuntu/ros2-slam-basic/install/serial_motor_demo/lib/python3.10/site-packages/serial_motor_demo/driver.py to driver.cpython-310.pyc
+[4.719s] running install_data
+[4.719s] creating /home/ubuntu/ros2-slam-basic/install/serial_motor_demo/share/ament_index
+[4.720s] creating /home/ubuntu/ros2-slam-basic/install/serial_motor_demo/share/ament_index/resource_index
+[4.720s] creating /home/ubuntu/ros2-slam-basic/install/serial_motor_demo/share/ament_index/resource_index/packages
+[4.721s] copying resource/serial_motor_demo -> /home/ubuntu/ros2-slam-basic/install/serial_motor_demo/share/ament_index/resource_index/packages
+[4.721s] copying package.xml -> /home/ubuntu/ros2-slam-basic/install/serial_motor_demo/share/serial_motor_demo
+[4.722s] running install_egg_info
+[4.729s] Copying ../../../build/serial_motor_demo/serial_motor_demo.egg-info to /home/ubuntu/ros2-slam-basic/install/serial_motor_demo/lib/python3.10/site-packages/serial_motor_demo-0.0.0-py3.10.egg-info
+[4.735s] running install_scripts
+[4.824s] Installing driver script to /home/ubuntu/ros2-slam-basic/install/serial_motor_demo/lib/serial_motor_demo
+[4.824s] Installing gui script to /home/ubuntu/ros2-slam-basic/install/serial_motor_demo/lib/serial_motor_demo
+[4.826s] writing list of installed files to '/home/ubuntu/ros2-slam-basic/build/serial_motor_demo/install.log'
+[4.947s] Invoked command in '/home/ubuntu/ros2-slam-basic/src/serial_motor_demo/serial_motor_demo' returned '0': PYTHONPATH=/home/ubuntu/ros2-slam-basic/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2-slam-basic/install/serial_motor_demo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/serial_motor_demo build --build-base /home/ubuntu/ros2-slam-basic/build/serial_motor_demo/build install --record /home/ubuntu/ros2-slam-basic/build/serial_motor_demo/install.log --install-scripts $base/lib/serial_motor_demo --single-version-externally-managed install_data

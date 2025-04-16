@@ -1,0 +1,131 @@
+[1.037s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'slam_toolbox']
+[1.038s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['slam_toolbox'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff9a354340>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9a44c8b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9a44c8b0>>, mixin_verb=('build',))
+[2.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.222s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/ros2-slam-basic'
+[2.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.308s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.309s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.310s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.310s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.310s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.311s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.311s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.311s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.312s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.312s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.312s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.313s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.313s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.313s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.314s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.315s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.315s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.315s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.315s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ld08_driver) by extensions ['ignore', 'ignore_ament_install']
+[2.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ld08_driver) by extension 'ignore'
+[2.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ld08_driver) by extension 'ignore_ament_install'
+[2.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ld08_driver) by extensions ['colcon_pkg']
+[2.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ld08_driver) by extension 'colcon_pkg'
+[2.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ld08_driver) by extensions ['colcon_meta']
+[2.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ld08_driver) by extension 'colcon_meta'
+[2.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ld08_driver) by extensions ['ros']
+[2.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ld08_driver) by extension 'ros'
+[2.334s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ld08_driver' with type 'ros.ament_cmake' and name 'ld08_driver'
+[2.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['ignore', 'ignore_ament_install']
+[2.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'ignore'
+[2.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'ignore_ament_install'
+[2.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['colcon_pkg']
+[2.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'colcon_pkg'
+[2.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['colcon_meta']
+[2.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'colcon_meta'
+[2.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extensions ['ros']
+[2.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_toolbox) by extension 'ros'
+[2.347s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam_toolbox' with type 'ros.ament_cmake' and name 'slam_toolbox'
+[2.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.488s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ld08_driver' in 'src/ld08_driver'
+[2.491s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.491s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.512s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/ubuntu/turtlebot3_ws/install
+[2.523s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 242 installed packages in /opt/ros/humble
+[2.570s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.759s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_args' from command line to 'None'
+[2.760s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_target' from command line to 'None'
+[2.760s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.760s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_clean_cache' from command line to 'False'
+[2.760s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_clean_first' from command line to 'False'
+[2.760s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'cmake_force_configure' from command line to 'False'
+[2.760s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'ament_cmake_args' from command line to 'None'
+[2.760s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'catkin_cmake_args' from command line to 'None'
+[2.761s] Level 5:colcon.colcon_core.verb:set package 'slam_toolbox' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.761s] DEBUG:colcon.colcon_core.verb:Building package 'slam_toolbox' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2-slam-basic/build/slam_toolbox', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2-slam-basic/install/slam_toolbox', 'merge_install': False, 'path': '/home/ubuntu/ros2-slam-basic/src/slam_toolbox', 'symlink_install': False, 'test_result_base': None}
+[2.761s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.765s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.765s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2-slam-basic/src/slam_toolbox' with build type 'ament_cmake'
+[2.766s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2-slam-basic/src/slam_toolbox'
+[2.787s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.788s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.788s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2-slam-basic/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2-slam-basic/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2-slam-basic/install/slam_toolbox
+[30.603s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2-slam-basic/build/slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2-slam-basic/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2-slam-basic/install/slam_toolbox
+[30.618s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2-slam-basic/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2-slam-basic/build/slam_toolbox -- -j4 -l4
+[812.764s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2-slam-basic/build/slam_toolbox' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/home/ubuntu/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2-slam-basic/build/slam_toolbox -- -j4 -l4
+[813.055s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_toolbox)
+[813.335s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2-slam-basic/install/slam_toolbox' for CMake module files
+[813.346s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2-slam-basic/install/slam_toolbox' for CMake config files
+[813.375s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2-slam-basic/install/slam_toolbox/bin'
+[813.376s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2-slam-basic/install/slam_toolbox/lib/pkgconfig/slam_toolbox.pc'
+[813.418s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2-slam-basic/install/slam_toolbox/lib/python3.10/site-packages'
+[813.420s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2-slam-basic/install/slam_toolbox/bin'
+[813.426s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2-slam-basic/install/slam_toolbox/share/slam_toolbox/package.ps1'
+[813.512s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2-slam-basic/install/slam_toolbox/share/slam_toolbox/package.dsv'
+[813.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2-slam-basic/install/slam_toolbox/share/slam_toolbox/package.sh'
+[813.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2-slam-basic/install/slam_toolbox/share/slam_toolbox/package.bash'
+[813.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2-slam-basic/install/slam_toolbox/share/slam_toolbox/package.zsh'
+[813.573s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2-slam-basic/install/slam_toolbox/share/colcon-core/packages/slam_toolbox)
+[813.646s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[813.670s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[813.675s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[813.684s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[814.042s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[814.044s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[814.044s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[814.044s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[814.620s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[814.623s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[814.632s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2-slam-basic/install/local_setup.ps1'
+[814.638s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ros2-slam-basic/install/_local_setup_util_ps1.py'
+[814.650s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2-slam-basic/install/setup.ps1'
+[814.688s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2-slam-basic/install/local_setup.sh'
+[814.695s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ros2-slam-basic/install/_local_setup_util_sh.py'
+[814.699s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2-slam-basic/install/setup.sh'
+[814.709s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2-slam-basic/install/local_setup.bash'
+[814.713s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2-slam-basic/install/setup.bash'
+[814.728s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2-slam-basic/install/local_setup.zsh'
+[814.732s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2-slam-basic/install/setup.zsh'

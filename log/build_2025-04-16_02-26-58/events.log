@@ -1,0 +1,8 @@
+[0.000000] (-) TimerEvent: {}
+[0.001376] (-) JobUnselected: {'identifier': 'ld08_driver'}
+[0.001754] (-) JobUnselected: {'identifier': 'serial_motor_demo_msgs'}
+[0.001937] (-) JobUnselected: {'identifier': 'slam_toolbox'}
+[0.002041] (serial_motor_demo) JobQueued: {'identifier': 'serial_motor_demo', 'dependencies': OrderedDict([('serial_motor_demo_msgs', '/home/ubuntu/ros2-slam-basic/install/serial_motor_demo_msgs')])}
+[0.002153] (serial_motor_demo) JobStarted: {'identifier': 'serial_motor_demo'}
+[0.038881] (serial_motor_demo) JobEnded: {'identifier': 'serial_motor_demo', 'rc': 1}
+[0.050115] (-) EventReactorShutdown: {}

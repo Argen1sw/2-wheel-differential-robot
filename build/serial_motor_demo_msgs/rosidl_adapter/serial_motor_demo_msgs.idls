@@ -1,0 +1,3 @@
+/home/ubuntu/ros2-slam-basic/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/MotorCommand.idl
+/home/ubuntu/ros2-slam-basic/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/MotorVels.idl
+/home/ubuntu/ros2-slam-basic/build/serial_motor_demo_msgs/rosidl_adapter/serial_motor_demo_msgs:msg/EncoderVals.idl
