@@ -57,7 +57,7 @@
     <joint name="left_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="left_wheel"/>
-        <origin rpy="-${pi/2} 0 0" xyz="0 0.12 0"/>
+        <origin rpy="-${pi/2} 0 0" xyz="0 0.12 0.0336"/>
         <axis xyz="0 0 1"/>
     </joint>
 
@@ -85,7 +85,7 @@
     <joint name="right_wheel_joint" type="continuous">
     <parent link="base_link"/>
         <child link="right_wheel"/>
-        <origin rpy="${pi/2} 0 0" xyz="0 -0.12 0"/>
+        <origin rpy="${pi/2} 0 0" xyz="0 -0.12 0.0336"/>
         <axis xyz="0 0 -1"/>
     </joint>
 
@@ -119,16 +119,16 @@
     <link name="caster_wheel">
         <visual>
             <geometry>
-                <sphere radius="0.04"/>
+                <sphere radius="0.0114"/>
             </geometry>
             <material name="red"/>
         </visual>
         <collision>
             <geometry>
-                <sphere radius="0.04"/>
+                <sphere radius="0.0114"/>
             </geometry>
         </collision>
-        <xacro:inertial_sphere mass="0.1" radius="0.04">
+        <xacro:inertial_sphere mass="0.1" radius="0.0114">
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </xacro:inertial_sphere>
     </link>

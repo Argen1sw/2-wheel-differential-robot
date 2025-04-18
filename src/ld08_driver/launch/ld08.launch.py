@@ -24,7 +24,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
 
-    frame_id = LaunchConfiguration('frame_id', default='base_scan')
+    frame_id = LaunchConfiguration('frame_id', default='laser_frame')
     namespace = LaunchConfiguration('namespace', default='')
 
     return LaunchDescription([

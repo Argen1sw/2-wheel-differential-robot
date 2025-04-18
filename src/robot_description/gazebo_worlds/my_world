@@ -90,32 +90,6 @@
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
-    <light name='sun' type='directional'>
-      <cast_shadows>1</cast_shadows>
-      <pose>2.40483 3.36424 10 0 -0 0</pose>
-      <diffuse>0.8 0.8 0.8 1</diffuse>
-      <specular>0.2 0.2 0.2 1</specular>
-      <attenuation>
-        <range>1000</range>
-        <constant>0.9</constant>
-        <linear>0.01</linear>
-        <quadratic>0.001</quadratic>
-      </attenuation>
-      <direction>-0.5 0.1 -0.9</direction>
-    </light>
-    <light name='sun' type='directional'>
-      <cast_shadows>1</cast_shadows>
-      <pose>20.7618 -8.47413 10 0 -0 0</pose>
-      <diffuse>0.8 0.8 0.8 1</diffuse>
-      <specular>0.2 0.2 0.2 1</specular>
-      <attenuation>
-        <range>1000</range>
-        <constant>0.9</constant>
-        <linear>0.01</linear>
-        <quadratic>0.001</quadratic>
-      </attenuation>
-      <direction>-0.5 0.1 -0.9</direction>
-    </light>
     <model name='my_building'>
       <link name='link_1'>
         <inertial>
@@ -487,13 +461,13 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>1.99776 -1.00708 0.5 0 -0 0</pose>
+      <pose>2.33783 -0.86892 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>114 727000000</sim_time>
-      <real_time>115 170434236</real_time>
-      <wall_time>1744921293 523869927</wall_time>
-      <iterations>114727</iterations>
+      <sim_time>77 306000000</sim_time>
+      <real_time>77 602249009</real_time>
+      <wall_time>1744952773 77477802</wall_time>
+      <iterations>77306</iterations>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -505,30 +479,30 @@
         </link>
       </model>
       <model name='my_building'>
-        <pose>1.99776 -1.00708 0.5 0 -0 0</pose>
+        <pose>2.33783 -0.86892 0.499991 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link_1'>
-          <pose>2.56257 -0.182487 0.5 0 -0 0</pose>
+          <pose>2.90264 -0.044327 0.499991 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
         <link name='link_2'>
-          <pose>2.91145 1.9802 0.5 0 -0 0</pose>
+          <pose>3.25152 2.11836 0.5 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
         <link name='link_3'>
-          <pose>-0.04511 -3.16305 0.5 0 -0 0</pose>
+          <pose>0.29496 -3.02489 0.499991 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
         <link name='link_4'>
-          <pose>2.56213 -2.66298 0.5 0 -0 0</pose>
+          <pose>2.9022 -2.52482 0.5 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
+          <acceleration>0 0 0 -1e-06 1e-06 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
@@ -538,7 +512,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>9.20607 -11.2473 6.07242 0 0.425837 2.13001</pose>
+        <pose>5.15879 -10.2225 7.77938 0 0.655644 1.7482</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
