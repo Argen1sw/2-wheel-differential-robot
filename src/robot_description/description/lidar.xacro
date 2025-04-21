@@ -13,19 +13,20 @@
               <cylinder length="0.056" radius="0.05"/>
             </geometry>
             <material name="green"/>
-          </visual>
-          <collision>
+        </visual>
+        <collision>
             <geometry>
-              <cylinder length="0.056" radius="0.05"/>
+                <cylinder length="0.056" radius="0.05"/>
             </geometry>
-          </collision>
-          <xacro:inertial_cylinder mass="0.1" length="0.056" radius="0.05">
-              <origin rpy="0 0 0" xyz="0 0 0"/>
-          </xacro:inertial_cylinder>
+        </collision>
+        <xacro:inertial_cylinder mass="0.1" length="0.056" radius="0.05">
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        </xacro:inertial_cylinder>
     </link>
 
     <gazebo reference="laser_frame">
         <material>Gazebo/Green</material>
+        
         <sensor type="ray" name="laser">
             <pose>0 0 0 0 0 0</pose>
             <visualize>true</visualize>
@@ -43,14 +44,13 @@
                     <max>12</max>
                 </range>
             </ray>
-            <!-- <plugin name="laser_controller" filename="libgazebo_ros_laser.so">
+            <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">
                 <ros>
-                  <namespace>/</namespace>
+                    <argument>~/out:=scan</argument>
                 </ros>
-                <topicName>scan</topicName>
-                <frameName>laser_frame</frameName>
-            </plugin> -->
-            
+                <output_type>sensor_msgs/LaserScan</output_type>
+                <frame_name>laser_frame</frame_name>
+            </plugin>
         </sensor>
     </gazebo>
 </robot>
