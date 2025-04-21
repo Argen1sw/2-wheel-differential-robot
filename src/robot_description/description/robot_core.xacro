@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robot">
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <xacro:include filename="inertial_macros.xacro"/>
 
@@ -54,6 +54,7 @@
     </gazebo>
 
     <!-- LEFT WHEEL LINK -->
+
     <joint name="left_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="left_wheel"/>
@@ -63,15 +64,15 @@
 
     <link name="left_wheel">
         <visual>
-          <geometry>
-            <cylinder length="0.015" radius="0.045"/>
-          </geometry>
-          <material name="white"/>
+            <geometry>
+                <cylinder length="0.015" radius="0.045"/>
+            </geometry>
+            <material name="white"/>
         </visual>
         <collision>
-          <geometry>
-            <cylinder length="0.015" radius="0.045"/>
-          </geometry>
+            <geometry>
+                <cylinder length="0.015" radius="0.045"/>
+            </geometry>
         </collision>
         <xacro:inertial_cylinder mass="0.1" length="0.015" radius="0.045">
             <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -83,7 +84,7 @@
 
     <!-- RIGHT WHEEL LINK -->
     <joint name="right_wheel_joint" type="continuous">
-    <parent link="base_link"/>
+        <parent link="base_link"/>
         <child link="right_wheel"/>
         <origin rpy="${pi/2} 0 0" xyz="0 -0.12 0.0336"/>
         <axis xyz="0 0 -1"/>
@@ -92,13 +93,13 @@
     <link name="right_wheel">
         <visual>
             <geometry>
-            <cylinder length="0.015" radius="0.045"/>
+                <cylinder length="0.015" radius="0.045"/>
             </geometry>
             <material name="white"/>
         </visual>
         <collision>
             <geometry>
-            <cylinder length="0.015" radius="0.045"/>
+                <cylinder length="0.015" radius="0.045"/>
             </geometry>
         </collision>
         <xacro:inertial_cylinder mass="0.1" length="0.015" radius="0.045">

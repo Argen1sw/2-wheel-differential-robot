@@ -9,7 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 
 install(
-  DIRECTORY launch description gazebo_worlds description_roomba
+  DIRECTORY launch description description_roomba worlds
   DESTINATION share/${PROJECT_NAME}
 )
 

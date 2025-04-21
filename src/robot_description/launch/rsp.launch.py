@@ -19,12 +19,18 @@ def generate_launch_description():
 
     # Process the URDF file
     pkg_path = os.path.join(get_package_share_directory('robot_description'))
-    xacro_file = os.path.join(pkg_path,'description','robot.urdf.xacro')
+    xacro_file = os.path.join(pkg_path,
+                            'description',
+                            'robot.urdf.xacro')
     # xacro_file = os.path.join(pkg_path,'description_roomba','robot.urdf.xacro') # Roomba downloaded file
     robot_description_config = xacro.process_file(xacro_file)
     
+    # doc = xacro.parse(open(xacro_file))
+    # xacro.process_doc(doc)
+    
     # Create a robot_state_publisher node
     params = {'robot_description': robot_description_config.toxml(), 'use_sim_time': use_sim_time}
+    
     node_robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
