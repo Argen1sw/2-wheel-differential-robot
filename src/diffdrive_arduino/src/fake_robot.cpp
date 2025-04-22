@@ -8,15 +8,11 @@ FakeRobot::FakeRobot()
   : logger_(rclcpp::get_logger("FakeRobot"))
 {}
 
-
-
-return_type FakeRobot::configure(const hardware_interface::HardwareInfo & info)
+hardware_interface::CallbackReturn FakeRobot::on_init(const hardware_interface::HardwareInfo & info)
 {
-  info_ = info;
-
-  if (info_.joints.size() != 2) {
-    RCLCPP_FATAL(logger_, "FakeRobot: Expected exactly 2 joints.");
-    return return_type::ERROR;
+  if (hardware_interface::SystemInterface::on_init(info) != CallbackReturn::SUCCESS)
+  {
+    return CallbackReturn::ERROR;
   }
 
   RCLCPP_INFO(logger_, "Configuring...");
@@ -36,8 +32,7 @@ return_type FakeRobot::configure(const hardware_interface::HardwareInfo & info)
 
   RCLCPP_INFO(logger_, "Finished Configuration");
 
-  // status_ = hardware_interface::status::CONFIGURED;
-  return return_type::OK;
+  return CallbackReturn::SUCCESS;
 }
 
 std::vector<hardware_interface::StateInterface> FakeRobot::export_state_interfaces()
@@ -67,29 +62,30 @@ std::vector<hardware_interface::CommandInterface> FakeRobot::export_command_inte
 }
 
 
-return_type FakeRobot::start()
+hardware_interface::CallbackReturn FakeRobot::on_activate(const rclcpp_lifecycle::State & /*previous_state*/)
 {
   RCLCPP_INFO(logger_, "Starting Controller...");
-  // status_ = hardware_interface::status::STARTED;
 
-  return return_type::OK;
+  return CallbackReturn::SUCCESS;
 }
 
-return_type FakeRobot::stop()
+hardware_interface::CallbackReturn FakeRobot::on_deactivate(const rclcpp_lifecycle::State & /*previous_state*/)
 {
   RCLCPP_INFO(logger_, "Stopping Controller...");
-  // status_ = hardware_interface::status::STOPPED;
 
-  return return_type::OK;
+  return CallbackReturn::SUCCESS;;
 }
 
-hardware_interface::return_type FakeRobot::read(const rclcpp::Time & time, const rclcpp::Duration & period)
+hardware_interface::return_type FakeRobot::read(const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
 {
 
   // TODO fix chrono duration
 
   // Calculate time delta
-  double deltaSeconds = period.seconds();
+  auto new_time = std::chrono::system_clock::now();
+  std::chrono::duration<double> diff = new_time - time_;
+  double deltaSeconds = diff.count();
+  time_ = new_time;
 
 
   // Force the wheel position
@@ -101,7 +97,7 @@ hardware_interface::return_type FakeRobot::read(const rclcpp::Time & time, const
   
 }
 
-hardware_interface::return_type FakeRobot::write(const rclcpp::Time & time, const rclcpp::Duration & period)
+hardware_interface::return_type FakeRobot::write(const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
 {
 
   // Set the wheel velocities to directly match what is commanded

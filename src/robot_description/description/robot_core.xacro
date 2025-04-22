@@ -110,7 +110,7 @@
         <material>Gazebo/White</material>
     </gazebo>
 
-    <!-- CASTER WHEEL LINK -->
+    <!-- FRONT CASTER WHEEL LINK -->
     <joint name="caster_wheel_joint" type="fixed">
         <parent link="chassis"/>
         <child link="caster_wheel"/>
@@ -135,6 +135,36 @@
     </link>
 
     <gazebo reference="caster_wheel">
+        <material>Gazebo/Red</material>
+        <mu1 value="0.001"/>
+        <mu2 value="0.001"/>
+    </gazebo>
+
+    <!-- BACK CASTER WHEEL LINK (Real robot does not have this, only for simulation purposes) -->
+    <joint name="back_caster_wheel_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="back_caster_wheel"/>
+        <origin xyz="-0.14 0 0"/>
+    </joint>
+
+    <link name="back_caster_wheel">
+        <visual>
+            <geometry>
+                <sphere radius="0.0114"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+        <collision>
+            <geometry>
+                <sphere radius="0.0114"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_sphere mass="0.1" radius="0.0114">
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+        </xacro:inertial_sphere>
+    </link>
+
+    <gazebo reference="back_caster_wheel">
         <material>Gazebo/Red</material>
         <mu1 value="0.001"/>
         <mu2 value="0.001"/>

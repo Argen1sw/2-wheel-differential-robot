@@ -58,7 +58,6 @@
 
     <!-- This plugin does not work for now, is crashing the sim and not
      rendering anything -->
-     
     <gazebo>
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
             <parameters>$(find robot_description)/config/my_controllers.yaml</parameters>

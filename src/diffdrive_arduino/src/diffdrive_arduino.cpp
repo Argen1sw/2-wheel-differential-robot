@@ -5,22 +5,16 @@
 
 
 
-
 DiffDriveArduino::DiffDriveArduino()
     : logger_(rclcpp::get_logger("DiffDriveArduino"))
 {}
 
 
-
-
-
-return_type DiffDriveArduino::configure(const hardware_interface::HardwareInfo & info)
+hardware_interface::CallbackReturn DiffDriveArduino::on_init(const hardware_interface::HardwareInfo & info)
 {
-  info_ = info;
-
-  if (info_.joints.size() != 2) {
-    RCLCPP_FATAL(logger_, "DiffDriveArduino: Expected exactly 2 joints.");
-    return return_type::ERROR;
+  if (hardware_interface::SystemInterface::on_init(info) != CallbackReturn::SUCCESS)
+  {
+    return CallbackReturn::ERROR;
   }
 
   RCLCPP_INFO(logger_, "Configuring...");
@@ -39,17 +33,12 @@ return_type DiffDriveArduino::configure(const hardware_interface::HardwareInfo &
   l_wheel_.setup(cfg_.left_wheel_name, cfg_.enc_counts_per_rev);
   r_wheel_.setup(cfg_.right_wheel_name, cfg_.enc_counts_per_rev);
 
-  // ✅ Fix: make sure the names are saved for later use
-  l_wheel_.name = cfg_.left_wheel_name;
-  r_wheel_.name = cfg_.right_wheel_name;
-
   // Set up the Arduino
   arduino_.setup(cfg_.device, cfg_.baud_rate, cfg_.timeout);  
 
   RCLCPP_INFO(logger_, "Finished Configuration");
 
-  // status_ = hardware_interface::status::CONFIGURED;
-  return return_type::OK;
+  return CallbackReturn::SUCCESS;
 }
 
 std::vector<hardware_interface::StateInterface> DiffDriveArduino::export_state_interfaces()
@@ -63,8 +52,6 @@ std::vector<hardware_interface::StateInterface> DiffDriveArduino::export_state_i
   state_interfaces.emplace_back(hardware_interface::StateInterface(r_wheel_.name, hardware_interface::HW_IF_VELOCITY, &r_wheel_.vel));
   state_interfaces.emplace_back(hardware_interface::StateInterface(r_wheel_.name, hardware_interface::HW_IF_POSITION, &r_wheel_.pos));
 
-  RCLCPP_INFO(logger_, "Registering state interfaces for joints: [%s, %s]", l_wheel_.name.c_str(), r_wheel_.name.c_str());
-
   return state_interfaces;
 }
 
@@ -77,13 +64,11 @@ std::vector<hardware_interface::CommandInterface> DiffDriveArduino::export_comma
   command_interfaces.emplace_back(hardware_interface::CommandInterface(l_wheel_.name, hardware_interface::HW_IF_VELOCITY, &l_wheel_.cmd));
   command_interfaces.emplace_back(hardware_interface::CommandInterface(r_wheel_.name, hardware_interface::HW_IF_VELOCITY, &r_wheel_.cmd));
 
-  RCLCPP_INFO(logger_, "Registering state interfaces for joints: [%s, %s]", l_wheel_.name.c_str(), r_wheel_.name.c_str());
-
   return command_interfaces;
 }
 
 
-return_type DiffDriveArduino::start()
+hardware_interface::CallbackReturn DiffDriveArduino::on_activate(const rclcpp_lifecycle::State & /*previous_state*/)
 {
   RCLCPP_INFO(logger_, "Starting Controller...");
 
@@ -92,26 +77,27 @@ return_type DiffDriveArduino::start()
   // arduino.setPidValues(14,7,0,100);
   arduino_.setPidValues(30, 20, 0, 100);
 
-  // status_ = hardware_interface::status::STARTED;
-
-  return return_type::OK;
+  return CallbackReturn::SUCCESS;
 }
 
-return_type DiffDriveArduino::stop()
+hardware_interface::CallbackReturn DiffDriveArduino::on_deactivate(const rclcpp_lifecycle::State & /*previous_state*/)
 {
   RCLCPP_INFO(logger_, "Stopping Controller...");
-  // status_ = hardware_interface::status::STOPPED;
 
-  return return_type::OK;
+  return CallbackReturn::SUCCESS;
 }
 
-hardware_interface::return_type DiffDriveArduino::read(const rclcpp::Time &, const rclcpp::Duration & period)
+hardware_interface::return_type DiffDriveArduino::read(
+  const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
 {
 
   // TODO fix chrono duration
 
   // Calculate time delta
-  double deltaSeconds = period.seconds();
+  auto new_time = std::chrono::system_clock::now();
+  std::chrono::duration<double> diff = new_time - time_;
+  double deltaSeconds = diff.count();
+  time_ = new_time;
 
 
   if (!arduino_.connected())
@@ -136,7 +122,8 @@ hardware_interface::return_type DiffDriveArduino::read(const rclcpp::Time &, con
   
 }
 
-hardware_interface::return_type DiffDriveArduino::write(const rclcpp::Time &, const rclcpp::Duration &)
+hardware_interface::return_type DiffDriveArduino::write(
+  const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
 {
 
   if (!arduino_.connected())
