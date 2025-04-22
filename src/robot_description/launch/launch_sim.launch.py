@@ -52,7 +52,6 @@ def generate_launch_description():
         arguments=["joint_broad"],
     )
     
-    
     # Launch them all!
     return LaunchDescription([
         rsp,
