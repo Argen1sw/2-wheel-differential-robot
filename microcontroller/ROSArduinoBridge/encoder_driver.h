@@ -13,11 +13,6 @@
   #define RIGHT_ENC_PIN_A A4  //pin A4
   #define RIGHT_ENC_PIN_B A5   //pin A5
 
-  // #define LEFT_ENC_PIN_A A4
-  // #define LEFT_ENC_PIN_B A5
-  // #define RIGHT_ENC_PIN_A 2
-  // #define RIGHT_ENC_PIN_B 3
-
 
 #endif
 
