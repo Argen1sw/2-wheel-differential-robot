@@ -10,7 +10,7 @@
 
     Created for the Pi Robot Project: http://www.pirobot.org
     and the Home Brew Robotics Club (HBRC): http://hbrobotics.org
-    
+     
     Authors: Patrick Goebel, James Nugen
 
     Inspired and modeled after the ArbotiX driver by Michael Ferguson
@@ -197,6 +197,7 @@ int runCommand() {
     
 #ifdef USE_BASE
   case READ_ENCODERS:
+    // Serial.println(1234);  // fake left encoder
     Serial.print(readEncoder(LEFT));
     Serial.print(" ");
     Serial.println(readEncoder(RIGHT));
@@ -298,7 +299,7 @@ void setup() {
 */
 void loop() {
   while (Serial.available() > 0) {
-    
+
     // Read the next character
     chr = Serial.read();
 
