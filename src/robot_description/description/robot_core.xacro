@@ -65,16 +65,16 @@
     <link name="left_wheel">
         <visual>
             <geometry>
-                <cylinder length="0.015" radius="0.045"/>
+                <cylinder length="0.0147" radius="0.035"/>
             </geometry>
             <material name="white"/>
         </visual>
         <collision>
             <geometry>
-                <cylinder length="0.015" radius="0.045"/>
+                <cylinder length="0.0147" radius="0.035"/>
             </geometry>
         </collision>
-        <xacro:inertial_cylinder mass="0.1" length="0.015" radius="0.045">
+        <xacro:inertial_cylinder mass="0.1" length="0.147" radius="0.035">
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </xacro:inertial_cylinder>
     </link>
@@ -93,16 +93,16 @@
     <link name="right_wheel">
         <visual>
             <geometry>
-                <cylinder length="0.015" radius="0.045"/>
+                <cylinder length="0.0147" radius="0.035"/>
             </geometry>
             <material name="white"/>
         </visual>
         <collision>
             <geometry>
-                <cylinder length="0.015" radius="0.045"/>
+                <cylinder length="0.0147" radius="0.035"/>
             </geometry>
         </collision>
-        <xacro:inertial_cylinder mass="0.1" length="0.015" radius="0.045">
+        <xacro:inertial_cylinder mass="0.1" length="0.0147" radius="0.035">
             <origin rpy="0 0 0" xyz="0 0 0"/>
         </xacro:inertial_cylinder>
     </link>
