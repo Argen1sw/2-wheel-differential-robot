@@ -4,7 +4,8 @@
     <joint name="laser_joint" type="fixed">
         <parent link="chassis"/>
         <child link="laser_frame"/>
-        <origin rpy="0 0 -1.4052" xyz="-0.112 0.02 0.108"/>
+        <!-- LIDAR is rotated a bit more than 90 degress ~pi/2 -->
+        <origin rpy="0 0 -1.4052" xyz="-0.112 0.02 0.108"/> 
     </joint>
 
     <link name="laser_frame">
