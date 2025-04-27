@@ -34,17 +34,17 @@
         <visual>
           <origin rpy="0 0 0" xyz="0 0 0.043"/>
           <geometry>
-            <cylinder length="0.08" radius="0.185"/>
+            <cylinder length="0.08" radius="0.171"/>
           </geometry>
           <material name="black"/>
         </visual>
         <collision>
           <origin rpy="0 0 0" xyz="0 0 0.043"/>
           <geometry>
-            <cylinder length="0.08" radius="0.185"/>
+            <cylinder length="0.08" radius="0171"/>
           </geometry>
         </collision>
-        <xacro:inertial_cylinder mass="3.6" length="0.08" radius="0.185">
+        <xacro:inertial_cylinder mass="3.6" length="0.08" radius="0.171">
             <origin rpy="0 0 0" xyz="0 0 0.043"/>
         </xacro:inertial_cylinder>
     </link>
