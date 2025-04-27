@@ -27,11 +27,13 @@ hardware_interface::CallbackReturn DiffDriveArduino::on_init(const hardware_inte
   cfg_.device = info_.hardware_parameters["device"];
   cfg_.baud_rate = std::stoi(info_.hardware_parameters["baud_rate"]);
   cfg_.timeout = std::stoi(info_.hardware_parameters["timeout"]);
-  cfg_.enc_counts_per_rev = std::stoi(info_.hardware_parameters["enc_counts_per_rev"]);
+  // cfg_.enc_counts_per_rev = std::stoi(info_.hardware_parameters["enc_counts_per_rev"]);
+  cfg_.left_enc_counts_per_rev = std::stoi(info_.hardware_parameters["left_enc_counts_per_rev"]);
+  cfg_.right_enc_counts_per_rev = std::stoi(info_.hardware_parameters["right_enc_counts_per_rev"]);
 
   // Set up the wheels
-  l_wheel_.setup(cfg_.left_wheel_name, cfg_.enc_counts_per_rev);
-  r_wheel_.setup(cfg_.right_wheel_name, cfg_.enc_counts_per_rev);
+  l_wheel_.setup(cfg_.left_wheel_name, cfg_.left_enc_counts_per_rev);
+  r_wheel_.setup(cfg_.right_wheel_name, cfg_.right_enc_counts_per_rev);
 
   // Set up the Arduino
   arduino_.setup(cfg_.device, cfg_.baud_rate, cfg_.timeout);  
