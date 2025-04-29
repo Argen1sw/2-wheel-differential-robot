@@ -14,7 +14,7 @@ struct Config
   int timeout = 1000;
   int enc_counts_per_rev = 1716;
   int left_enc_counts_per_rev = 1716;  
-  int right_enc_counts_per_rev = 853;
+  int right_enc_counts_per_rev = 858;
 
 };
 
