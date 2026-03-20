@@ -1,7 +1,6 @@
 # Use the official ROS 2 Humble image as the base image
 
 FROM osrf/ros:humble-desktop-full
-# FROM r2_humble_from_file:latest
 
 # Set the working directory
 RUN apt-get update 
@@ -39,15 +38,12 @@ RUN apt-get update \
 RUN apt-get update && apt-get install -y --no-install-recommends \
   ros-humble-ros2-control \
   ros-humble-ros2-controllers \
+  ros-humble-gazebo-ros-pkgs \
+  ros-humble-gazebo-ros2-control \
   jstest-gtk \
   evtest \
   python3-serial \
   && rm -rf /var/lib/apt/lists/*
-
-# Installing Full + Gazebo packages for ROS 2 Humble
-RUN apt-get update && apt-get install -y --no-install-recommends \
-  ros-humble-gazebo-ros-pkgs \
-  && rm -rf /var/lib/apt/lists/* 
 
 
 # Copy the entrypoint script into the container
@@ -60,11 +56,5 @@ ENTRYPOINT [ "/bin/bash", "/entrypoint.sh" ]
 
 # Set the default command to run when the container starts
 CMD ["bash"]
-
-# Set the working directory to the ROS 2 workspace
-# WORKDIR /home/ros_ws/src
-
-# Clone the ROS 2 Udemy projects repository
-# RUN git clone https://github.com/Argen1sw/ROS2_udemy_projects.git
 
 RUN echo "ALL DONE !"
