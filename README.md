@@ -16,9 +16,14 @@ And then:
 
 To run the simulation:
 
-`ros2 launch robot_description launch_sim.launch.py world:=src/robot_description/worlds/my_world `
+` ros2 launch robot_description launch_sim.launch.py world:=src/robot_description/worlds/my_world `
 
 To move the robot around with the keyboard use
 
 `ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/diff_cont/cmd_vel_unstamped`
 
+
+
+### Flashing the Arduino
+
+Use ROSArduinoBridge.ino and flash the arduino with it.
